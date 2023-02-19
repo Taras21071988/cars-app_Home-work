@@ -47,7 +47,7 @@
   line-height: 110%;
   font-weight: bold;
   color: #030305;
-  margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .main-text{
   font-size: 16px;
@@ -71,9 +71,14 @@
   text-align: center;
   transition: background-color .5s;
 }
-.button:hover{
+.button:hover:not(:disabled){
   cursor: pointer;
   background-color: #575757;
+}
+.button:disabled{
+  cursor: not-allowed;
+  color: grey;
+  background-color: #343434;
 }
 .car{
   padding: 100px 0;

@@ -12,7 +12,9 @@ export class AppComponent {
     phone: ['',Validators.required],
     car: ['',Validators.required],
   })
-
+  carsData = [
+    
+  ]
   constructor(private fb:FormBuilder) {
   }
 
@@ -22,6 +24,7 @@ export class AppComponent {
   onSubmit(){
     if(this.priceForm.valid){
       alert("Спасибо за заявку");
+      this.priceForm.reset();
     }
   }
 

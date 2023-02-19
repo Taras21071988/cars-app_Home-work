@@ -284,7 +284,7 @@
       <input type="text" class="price-input" id="name" placeholder="Ваше имя" formControlName="name">
       <input type="text" class="price-input" id="phone" placeholder="Ваш телефон" formControlName="phone">
       <input type="text" class="price-input" id="car" placeholder="Автомобиль, который вас интересует" formControlName="car">
-      <button class="button" type="button" id="price-action" (click)="onSubmit()" >Узнать цену</button>
+      <button class="button" type="button" id="price-action" (click)="onSubmit()" [disabled]="!priceForm.valid">Узнать цену</button>
     </form>
     <img class="price-image" src="../assets/img/rolls.png" alt="price-img">
   </div>
