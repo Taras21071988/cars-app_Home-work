@@ -11,10 +11,23 @@ export class AppComponent {
     name: ['',Validators.required],
     phone: ['',Validators.required],
     car: ['',Validators.required],
-  })
+  });
   carsData = [
-    
-  ]
+    {
+      image: "1.png",
+      name: "Lamborghini Huracan Spyder",
+      gear: "полный",
+      engine: 5.2,
+      places: 2
+    },
+    {
+      image: "2.png",
+      name: "Chevrolet Corvette",
+      gear: "полный",
+      engine: 6.2,
+      places: 2
+    },
+  ];
   constructor(private fb:FormBuilder) {
   }
 
